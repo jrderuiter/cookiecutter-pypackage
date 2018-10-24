@@ -13,7 +13,7 @@ with open('HISTORY.rst') as history_file:
 
 requirements = [{%- if cookiecutter.command_line_interface|lower == 'click' %}'Click>=6.0',{%- endif %} ]
 
-setup_requirements = [{%- if cookiecutter.use_pytest == 'y' %}'pytest-runner',{%- endif %} ]
+setup_requirements = [{%- if cookiecutter.use_pytest == 'y' %}'pytest-runner',{%- endif %} 'setuptools_scm', ]
 
 test_requirements = [{%- if cookiecutter.use_pytest == 'y' %}'pytest',{%- endif %} ]
 
@@ -61,10 +61,10 @@ setup(
     name='{{ cookiecutter.project_slug }}',
     packages=setuptools.find_packages('src'),
     package_dir={'': 'src'},
+    use_scm_version=True,
     setup_requires=setup_requirements,
     test_suite='tests',
     tests_require=test_requirements,
     url='https://github.com/{{ cookiecutter.github_username }}/{{ cookiecutter.project_slug }}',
-    version='{{ cookiecutter.version }}',
     zip_safe=False,
 )

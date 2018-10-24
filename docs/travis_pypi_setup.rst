@@ -43,7 +43,7 @@ If you are using this feature, this is how you would do a patch release:
 
 .. code-block:: bash
 
-    bumpversion patch
+    # TODO: bump version?
     git push --tags
 
 This will result in:

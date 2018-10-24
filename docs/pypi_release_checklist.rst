@@ -26,10 +26,6 @@ For Every Release
 
 #. Update version number (can also be patch or major)
 
-    .. code-block:: bash
-
-        bumpversion minor
-
 #. Install the package again for local development, but with the new version number:
 
     .. code-block:: bash
