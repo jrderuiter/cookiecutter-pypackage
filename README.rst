@@ -2,18 +2,20 @@
 Cookiecutter PyPackage
 ======================
 
-.. image:: https://pyup.io/repos/github/audreyr/cookiecutter-pypackage/shield.svg
-     :target: https://pyup.io/repos/github/audreyr/cookiecutter-pypackage/
-     :alt: Updates
+Cookiecutter_ template for a Python package, forked from audreyr_.
 
-.. image:: https://travis-ci.org/audreyr/cookiecutter-pypackage.svg?branch=master
-    :target: https://travis-ci.org/audreyr/cookiecutter-pypackage
+Compared to the original template, this fork makes the following changes:
 
-Cookiecutter_ template for a Python package.
+* Modules are put in a ``src`` directory, to ensure that we are always testing the
+  installed version of the package.
+* Bumpversion is replaced by setuptools_scm, so that we can use SCM tags to manage
+  package version numbers.
+* The default Sphinx theme is switched to the Sphinx ReadTheDocs theme.
 
-* GitHub repo: https://github.com/audreyr/cookiecutter-pypackage/
-* Documentation: https://cookiecutter-pypackage.readthedocs.io/
-* Free software: BSD license
+| GitHub repo: https://github.com/jrderuiter/cookiecutter-pypackage/
+| Free software: BSD license
+
+.. _audreyr: https://github.com/audreyr/cookiecutter-pypackage
 
 Features
 --------
@@ -28,21 +30,6 @@ Features
 
 .. _Cookiecutter: https://github.com/audreyr/cookiecutter
 
-Build Status
--------------
-
-Linux:
-
-.. image:: https://img.shields.io/travis/audreyr/cookiecutter-pypackage.svg
-    :target: https://travis-ci.org/audreyr/cookiecutter-pypackage
-    :alt: Linux build status on Travis CI
-
-Windows:
-
-.. image:: https://ci.appveyor.com/api/projects/status/github/audreyr/cookiecutter-pypackage?branch=master&svg=true
-    :target: https://ci.appveyor.com/project/audreyr/cookiecutter-pypackage/branch/master
-    :alt: Windows build status on Appveyor
-
 Quickstart
 ----------
 
@@ -53,7 +40,7 @@ Cookiecutter 1.4.0 or higher)::
 
 Generate a Python package project::
 
-    cookiecutter https://github.com/audreyr/cookiecutter-pypackage.git
+    cookiecutter https://github.com/jrderuiter/cookiecutter-pypackage.git
 
 Then:
 
@@ -98,25 +85,6 @@ Similar Cookiecutter Templates
 
 * Also see the `network`_ and `family tree`_ for this repo. (If you find
   anything that should be listed here, please add it and send a pull request!)
-
-Support this Project
-~~~~~~~~~~~~~~~~~~~~~
-
-You can take our detailed course that covers all the features of this template, which has the added bonus of funding this project:
-
-.. image:: https://www.pydanny.com/static/packaging-course.jpg
-   :name: Creating and Distributing Python Packages image
-   :align: center
-   :alt: Creating and Distributing Python Packages
-   :target: https://twoscoopspress.thinkific.com/courses/creating-and-distributing-python-packages-es
-
-También disponible en español:
-
-.. image:: https://www.pydanny.com/static/packaging-course-es.jpg
-   :name: Creating and Distributing Python Packages ES image
-   :align: center
-   :alt: Creating and Distributing Python Packages ES
-   :target: https://twoscoopspress.thinkific.com/courses/creating-and-distributing-python-packages-es
 
 Fork This / Create Your Own
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
